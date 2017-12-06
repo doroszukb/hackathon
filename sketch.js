@@ -45,9 +45,11 @@ if(windowHeight<windowWidth)
 } else{image(myImg0,0,windowHeight/2-windowWidth/2,windowWidth,windowWidth)}
 
 
-
-
-p1=windowHeight/2-windowHeight/4-10
+var p1
+if( windowWidth>windowHeight){
+p1=windowHeight/4} else{
+  p1=(windowHeight-windowWidth)/2+windowWidth/4
+}
 var vol = mic.getLevel()
 fill(255, 209, 7,90)
 
@@ -70,20 +72,20 @@ ellipse(windowWidth/2,p1,remap1)
 
 //strokeWeight(10)
 //fill('red')
-if (windowHeight<windowWidth) {
+//if (windowHeight<windowWidth) {
   
-  fill(255, 119, 0)
-ellipse(windowWidth/2,p1,remap0)
+ /// fill(255, 119, 0)
+//ellipse(windowWidth/2,p1,remap0)
 
-fill(255, 220, 71,99)
-ellipse(windowWidth/2,p1,remap)
+//fill(255, 220, 71,99)
+//ellipse(windowWidth/2,p1,remap)
 
-fill(255, 232, 137,90)
-ellipse(windowWidth/2,p1,remap1)
+//fill(255, 232, 137,90)
+//ellipse(windowWidth/2,p1,remap1)
 
   
-ellipse((windowWidth-windowHeight)/2+windowHeight/4,windowHeight*15/40,10,10)
-} else{ellipse(windowWidth/4,(windowHeight-windowWidth)/2+windowWidth*15/40,10,10)}
+//ellipse((windowWidth-windowHeight)/2+windowHeight/4,windowHeight*15/40,10,10)
+//} else{ellipse(windowWidth/4,(windowHeight-windowWidth)/2+windowWidth*15/40,10,10)}
 	
 
 	
